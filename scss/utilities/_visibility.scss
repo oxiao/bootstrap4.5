@@ -11,3 +11,11 @@
 .invisible {
   visibility: hidden !important;
 }
+
+[hidden] {
+  display: none !important;
+}
+
+[role="button"] {
+  cursor: pointer !important;
+}

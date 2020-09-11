@@ -110,6 +110,10 @@ button.bg-dark:focus {
   background-color: transparent !important;
 }
 
+.bg-dim {
+  background-color: #ced4da !important;
+}
+
 .border {
   border: 1px solid #dee2e6 !important;
 }
@@ -228,6 +232,14 @@ button.bg-dark:focus {
 
 .rounded-0 {
   border-radius: 0 !important;
+}
+
+.rounded-small {
+  border-radius: 2px !important;
+}
+
+.rounded-medium {
+  border-radius: 4px !important;
 }
 
 .clearfix::after {
@@ -3298,6 +3310,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .invisible {
   visibility: hidden !important;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[role="button"] {
+  cursor: pointer !important;
 }
 
 /*# sourceMappingURL=bootstrap-utils.css.map */
