@@ -69,5 +69,23 @@
     .mx#{$infix}-auto {
       margin-left: auto !important;
     }
+
+    /** gap space for children of horizontal or vertical */
+    @each $prop, $abbrev in (margin-right: x, margin-bottom: y) {
+      @each $size, $length in $spacers {
+        .g#{$abbrev}#{$infix}-#{$size} > * {
+          #{$prop}: $length !important;
+          :last-child {
+            #{$prop}: 0 !important;
+          }
+        }
+        .g#{$abbrev}#{$infix}-#{$size} > * {
+          #{$prop}: $length !important;
+          :last-child {
+            #{$prop}: 0 !important;
+          }
+        }
+      }
+    }
   }
 }
